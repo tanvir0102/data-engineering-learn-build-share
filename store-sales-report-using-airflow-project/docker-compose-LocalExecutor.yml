@@ -13,7 +13,7 @@ services:
         environment:
             - MYSQL_ROOT_PASSWORD=root
         volumes:
-            - ./store_files:/store_files_mysql/
+            - ./store_files:/var/lib/mysql-files/
             - ./mysql.cnf:/etc/mysql/mysql.cnf
 
     webserver:
