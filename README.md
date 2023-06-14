@@ -6,4 +6,4 @@
 - [ ] [sales-data-exploration-using-SQL](sales-data-exploration-using-SQL/sales-data-exploration-using-SQL.md)
 - [ ] [library-data-model-analysis-using-SQL](library-data-model-analysis-using-SQL/library-data-model-analysis-using-SQL.md)
 - [ ] [instagram-data-model-analysis-using-SQL](instagram-data-model-analysis-using-SQL/instagram-data-model-analysis-using-SQL.md)
-- [ ] [ecommerce-data-model-analysis-using-SQL/ecommerce-data-model-analysis-using-SQL.md](ecommerce-data-model-analysis-using-SQL/ecommerce-data-model-analysis-using-SQL.md)
+- [ ] [ecommerce-data-model-analysis-using-SQL](ecommerce-data-model-analysis-using-SQL/ecommerce-data-model-analysis-using-SQL.md)
