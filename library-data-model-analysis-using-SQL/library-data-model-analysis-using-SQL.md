@@ -1,6 +1,7 @@
 
 # Library Data Model Analysis Using SQL
 
+### Create Authors Table to store author details
 ```
 CREATE TABLE authors (
   author_id SERIAL PRIMARY KEY,
@@ -8,6 +9,7 @@ CREATE TABLE authors (
 );
 ```
 
+### Create Books Table to store book details
 ```
 CREATE TABLE books (
   book_id SERIAL PRIMARY KEY,
@@ -18,6 +20,7 @@ CREATE TABLE books (
 );
 ```
 
+### Create Borrowers Table to store borrower details
 ```
 CREATE TABLE borrowers (
   borrower_id SERIAL PRIMARY KEY,
