@@ -116,3 +116,11 @@ VALUES
     (1, 5),
     (5, 1);
 ```
+
+### Updating the data
+```
+-- Updating the caption of post_id 3
+UPDATE Posts
+SET caption = 'Best pizza ever'
+WHERE post_id = 3;
+```
