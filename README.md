@@ -1,7 +1,7 @@
-# Data-engineering-learn-build-share - Learning Materials, Sample Poject in Data Engineering, POC Projects
+# Data-engineering-learn-build-share - Learning Materials, Projects in Data Engineering, POC Projects
 
 
-### Sample Projects implementation using SQL
+### Projects implementation using SQL
 - [ ] [iPhone-data-analysis-using-SQL](iPhone-data-analysis-using-SQL/iPhone-data-analysis-using-SQL.md)
 - [ ] [sales-data-exploration-using-SQL](sales-data-exploration-using-SQL/sales-data-exploration-using-SQL.md)
 - [ ] [library-data-model-analysis-using-SQL](library-data-model-analysis-using-SQL/library-data-model-analysis-using-SQL.md)
