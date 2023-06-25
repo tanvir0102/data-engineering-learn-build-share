@@ -96,3 +96,10 @@ FROM [logdata]
 GROUP BY [Operation name]
 ORDER BY [Operation Count]
 ```
+
+### 07. Create External Tables - Parquet File
+```
+*********************
+```
+
+### 08. Create a SQL Pool
