@@ -1,0 +1,549 @@
+CustomerID,CompanyName,SalesPerson
+469,Vast Bike Sales and Rental,adventure-works\pamela0
+470,Wingtip Toys,adventure-works\david8
+471,Social Activities Club,adventure-works\jillian0
+472,Summer Sports Place,adventure-works\jillian0
+473,Racing Toys,adventure-works\shu0
+474,Retail Cycle Shop,adventure-works\linda3
+475,Real Sporting Goods,adventure-works\shu0
+478,Major Cycling,adventure-works\josé1
+479,General Supplies,adventure-works\josé1
+480,General Bike Corporation,adventure-works\garrett1
+484,Downhill Bicycle Specialists,adventure-works\jae0
+487,Bike Experts,adventure-works\pamela0
+488,Bicycle Accessories and Kits,adventure-works\david8
+489,Cash & Carry Bikes,adventure-works\jillian0
+490,Extraordinary Bike Works,adventure-works\jillian0
+491,Area Bike Accessories,adventure-works\shu0
+492,Basic Sports Equipment,adventure-works\linda3
+493,Valley Bicycle Distributors,adventure-works\shu0
+496,Top Sports Supply,adventure-works\josé1
+497,Valley Toy Store,adventure-works\josé1
+498,Quick Delivery Service,adventure-works\garrett1
+502,Metropolitan Bicycle Supply,adventure-works\jae0
+504,Historic Bicycle Sales,adventure-works\michael9
+505,Honest Repair Service,adventure-works\pamela0
+506,Great Bikes ,adventure-works\david8
+507,Global Sporting Goods,adventure-works\jillian0
+508,Designer Department Stores,adventure-works\jillian0
+509,Fun Toys and Bikes,adventure-works\shu0
+510,World Bike Discount Store,adventure-works\linda3
+511,Wheel Gallery,adventure-works\shu0
+514,Retail Mall,adventure-works\josé1
+515,Rural Bicycle Supply,adventure-works\josé1
+516,Seats and Saddles Company,adventure-works\garrett1
+520,Metro Metals Co.,adventure-works\jae0
+523,Futuristic Sport Distributors,adventure-works\shu0
+526,Finer Sales and Service,adventure-works\josé1
+527,Fun Times Club,adventure-works\shu0
+528,Alpine Ski House,adventure-works\linda3
+529,Big-Time Bike Store,adventure-works\shu0
+532,The Showroom,adventure-works\josé1
+533,Tenth Bike Store,adventure-works\josé1
+534,Recommended Bicycles,adventure-works\garrett1
+538,Prosperous Tours,adventure-works\jae0
+541,Nonskid Tire Company,adventure-works\pamela0
+542,Finer Parts Shop,adventure-works\david8
+543,Friendly Neighborhood Bikes,adventure-works\jillian0
+544,Valley Bicycle Specialists,adventure-works\jillian0
+545,Finish and Sealant Products,adventure-works\shu0
+546,Field Trip Store,adventure-works\linda3
+547,Curbside Sporting Goods,adventure-works\shu0
+550,Remote Bicycle Specialists,adventure-works\josé1
+551,Vinyl and Plastic Goods Corporation,adventure-works\josé1
+552,Consolidated Messenger,adventure-works\garrett1
+556,Variety Cycling,adventure-works\jae0
+559,Some Discount Store,adventure-works\pamela0
+560,Major Sport Suppliers,adventure-works\david8
+561,Mountain Toy Store,adventure-works\jillian0
+562,Practical Bike Supply Company,adventure-works\jillian0
+563,Systematic Sales,adventure-works\shu0
+564,Imported and Domestic Cycles,adventure-works\linda3
+565,Metallic Paint and Overcoat Co,adventure-works\shu0
+568,Economy Center,adventure-works\josé1
+569,Designated Distributors,adventure-works\josé1
+570,Family's Favorite Bike Shop,adventure-works\garrett1
+574,Area Sheet Metal Supply,adventure-works\jae0
+577,Synthetic Materials Manufacturing,adventure-works\pamela0
+578,The Bike Shop,adventure-works\david8
+579,Riders Company,adventure-works\jillian0
+580,Rural Sales and Service,adventure-works\jillian0
+581,Safe Toys,adventure-works\shu0
+582,Professional Sales and Service,adventure-works\linda3
+583,Professional Containers and Packaging Co.,adventure-works\shu0
+586,One Bike Company,adventure-works\josé1
+587,Our Sporting Goods Store,adventure-works\josé1
+588,General Cycle Storehouse,adventure-works\garrett1
+592,Cycling Goods,adventure-works\jae0
+595,Cycle Clearance,adventure-works\pamela0
+596,Coho Sports,adventure-works\david8
+597,All Seasons Sports Supply,adventure-works\jillian0
+598,Black Bicycle Company,adventure-works\jillian0
+599,Westside Plaza,adventure-works\shu0
+600,Strenuous Exercise Shop,adventure-works\linda3
+601,Transport Bikes,adventure-works\shu0
+604,Sellers of Cycles,adventure-works\pamela0
+605,Outstanding Cycles,adventure-works\david8
+606,Little Bicycle Supply Shop,adventure-works\jillian0
+607,Maintenance and Repair for Bicycles,adventure-works\jillian0
+608,Golf and Cycle Store,adventure-works\shu0
+609,Good Toys,adventure-works\linda3
+610,Fitness Department Stores,adventure-works\shu0
+613,Famous Bike Shop,adventure-works\garrett1
+617,Tubeless Tire Company,adventure-works\jae0
+620,Tires and Tubes,adventure-works\pamela0
+621,Running and Cycling Gear,adventure-works\david8
+622,Gift and Toy Store,adventure-works\jillian0
+623,Hardware Components,adventure-works\jillian0
+624,First Cycle Store,adventure-works\shu0
+625,Major Sporting Goods,adventure-works\linda3
+626,Retail Sporting Goods,adventure-works\shu0
+629,Efficient Cycling,adventure-works\josé1
+630,Eastside Parts Shop,adventure-works\josé1
+631,Tandem Sales and Service,adventure-works\garrett1
+635,Sports Store,adventure-works\jae0
+637,Reliable Retail Center,adventure-works\garrett1
+641,Extended Tours,adventure-works\jae0
+643,Friendly Bike Shop,adventure-works\michael9
+644,Convenient Sales and Service,adventure-works\pamela0
+645,Superior Hardware Distributors,adventure-works\david8
+646,Yellow Bicycle Company,adventure-works\jillian0
+647,Solid Bike Parts,adventure-works\jillian0
+648,Small Bike Shop,adventure-works\shu0
+649,Sports Products Store,adventure-works\linda3
+650,Permanent Finish Products,adventure-works\shu0
+653,Mercantile Outlet,adventure-works\josé1
+654,Online Bike Warehouse,adventure-works\josé1
+655,Operational Manufacturing,adventure-works\garrett1
+659,Shipping Specialists,adventure-works\jae0
+660,Exhilarating Cycles,adventure-works\michael9
+661,General Department Stores,adventure-works\garrett1
+665,Authentic Sales and Service,adventure-works\jae0
+668,Official Parts Shop,adventure-works\pamela0
+669,Racing Bike Outlet,adventure-works\david8
+670,First Bike Store,adventure-works\jillian0
+671,"Contoso, Ltd.",adventure-works\jillian0
+672,Utilitarian Sporting Goods,adventure-works\shu0
+673,Countryside Company,adventure-works\linda3
+674,Discount Tours,adventure-works\shu0
+677,Tire Exchange,adventure-works\josé1
+678,Vigorous Exercise Company,adventure-works\josé1
+679,Superb Sales and Repair,adventure-works\garrett1
+683,Oils and Fluids Warehouse,adventure-works\jae0
+685,Family Cycle Store,adventure-works\garrett1
+689,Consumer Equipment,adventure-works\jae0
+692,Successful Sales Company,adventure-works\pamela0
+693,Stock Parts and Supplies,adventure-works\david8
+694,The Accessories Store,adventure-works\jillian0
+695,Responsible Bike Dealers,adventure-works\jillian0
+696,Roadway Supplies,adventure-works\shu0
+697,Brakes and Gears,adventure-works\linda3
+698,Western Bike Supplies,adventure-works\shu0
+701,Future Bikes,adventure-works\josé1
+29485,Professional Sales and Service,adventure-works\linda3
+29486,Riders Company,adventure-works\jillian0
+29489,Area Bike Accessories,adventure-works\shu0
+29490,Bicycle Accessories and Kits,adventure-works\david8
+29492,Valley Bicycle Specialists,adventure-works\jillian0
+29494,Vinyl and Plastic Goods Corporation,adventure-works\josé1
+29496,Fun Toys and Bikes,adventure-works\shu0
+29497,Great Bikes ,adventure-works\david8
+29499,Valley Toy Store,adventure-works\josé1
+29502,Major Sport Suppliers,adventure-works\david8
+29503,Family's Favorite Bike Shop,adventure-works\garrett1
+29505,Imported and Domestic Cycles,adventure-works\linda3
+29506,Systematic Sales,adventure-works\shu0
+29508,Mountain Toy Store,adventure-works\jillian0
+29510,Designated Distributors,adventure-works\josé1
+29511,Bold Bike Accessories,adventure-works\linda3
+29515,Serious Cycles,adventure-works\garrett1
+29517,Novelty Bikes,adventure-works\michael9
+29521,Brightwork Company,adventure-works\shu0
+29522,Resale Services,adventure-works\linda3
+29523,The Gear Store,adventure-works\jillian0
+29524,Immense Manufacturing Company,adventure-works\jillian0
+29525,Extended Bike Sales,adventure-works\linda3
+29527,Workout Emporium,adventure-works\josé1
+29528,Work and Play Association,adventure-works\michael9
+29530,Nice Bikes,adventure-works\garrett1
+29531,Remarkable Bike Store,adventure-works\linda3
+29532,Road-Way Mart,adventure-works\david8
+29533,Small Cycle Store,adventure-works\michael9
+29535,Grand Bicycle Stores,adventure-works\jillian0
+29536,Kickstand Sellers,adventure-works\michael9
+29539,Gasless Cycle Shop,adventure-works\garrett1
+29541,Transportation Options,adventure-works\josé1
+29544,Finer Cycle Shop,adventure-works\garrett1
+29545,Center Cycle Shop,adventure-works\pamela0
+29546,Bulk Discount Store,adventure-works\jae0
+29548,First-Rate Outlet,adventure-works\garrett1
+29550,Another Bicycle Company,adventure-works\david8
+29553,Unsurpassed Bikes,adventure-works\jillian0
+29554,Field Trip Inc,adventure-works\michael9
+29557,Odometers and Accessories Company,adventure-works\garrett1
+29558,Scratch-Resistant Finishes Company,adventure-works\josé1
+29559,Safe Cycles Shop,adventure-works\david8
+29560,Number 1 Supply,adventure-works\shu0
+29562,Golf and Cycle Store,adventure-works\shu0
+29565,World Bike Discount Store,adventure-works\linda3
+29566,Historic Bicycle Sales,adventure-works\michael9
+29567,Commuter Bicycle Store,adventure-works\josé1
+29568,Coalition Bike Company,adventure-works\shu0
+29569,Travel Systems,adventure-works\jillian0
+29570,Grease and Oil Products Company,adventure-works\jillian0
+29571,Moderately-Priced Bikes Store,adventure-works\pamela0
+29573,Economy Bikes Company,adventure-works\linda3
+29574,Third Bike Store,adventure-works\jillian0
+29576,Bikes for Two,adventure-works\josé1
+29577,Metal Processing Company,adventure-works\garrett1
+29579,Initial Bike Company,adventure-works\shu0
+29580,Latest Sports Equipment,adventure-works\david8
+29582,Raw Materials Inc,adventure-works\pamela0
+29583,Lots of Bikes Storehouse,adventure-works\jillian0
+29584,Futuristic Bikes,adventure-works\shu0
+29585,Parcel Express Delivery Service,adventure-works\david8
+29587,Prosperous Tours,adventure-works\jae0
+29588,Nonskid Tire Company,adventure-works\pamela0
+29590,Metro Bike Works,adventure-works\michael9
+29591,Best o' Bikes,adventure-works\jillian0
+29593,Client Discount Store,adventure-works\jillian0
+29596,Requisite Part Supply,adventure-works\josé1
+29598,Mechanical Products Ltd.,adventure-works\shu0
+29599,Commendable Bikes,adventure-works\david8
+29600,Online Bike Sellers,adventure-works\michael9
+29601,Custom Accessories Company,adventure-works\garrett1
+29603,Courteous Bicycle Specialists,adventure-works\josé1
+29605,Professional Cycle Store,adventure-works\shu0
+29606,Fifth Bike Store,adventure-works\david8
+29608,Farthest Bike Store,adventure-works\josé1
+29611,Alternative Vehicles,adventure-works\pamela0
+29612,Channel Outlet,adventure-works\jae0
+29614,Retail Mall,adventure-works\josé1
+29615,Metro Metals Co.,adventure-works\jae0
+29616,Sheet Metal Manufacturing,adventure-works\jillian0
+29617,Thorough Parts and Repair Services,adventure-works\pamela0
+29618,Uttermost Bike Shop,adventure-works\jae0
+29620,Two-Wheeled Transit Company,adventure-works\josé1
+29622,Metro Cycle Shop,adventure-works\david8
+29623,Outdoor Sporting Goods,adventure-works\shu0
+29625,Petroleum Products Distributors,adventure-works\josé1
+29627,Bikes and Motorbikes,adventure-works\garrett1
+29629,Camping and Sports Store,adventure-works\josé1
+29631,Rural Department Store,adventure-works\shu0
+29632,Sports Commodities,adventure-works\david8
+29635,Responsible Bike Dealers,adventure-works\jillian0
+29636,Western Bike Supplies,adventure-works\shu0
+29637,Advanced Bike Components,adventure-works\jillian0
+29638,Aerobic Exercise Company,adventure-works\linda3
+29639,Corner Bicycle Supply,adventure-works\josé1
+29641,Westside Plaza,adventure-works\shu0
+29643,Outstanding Cycles,adventure-works\david8
+29644,Vigorous Sports Store,adventure-works\jae0
+29645,Sports Merchandise,adventure-works\pamela0
+29646,Fitness Toy Store,adventure-works\jillian0
+29649,General Cycle Storehouse,adventure-works\garrett1
+29650,Fitness Cycling,adventure-works\shu0
+29651,Good Bike Shop,adventure-works\jillian0
+29653,Thrilling Bike Tours,adventure-works\linda3
+29654,This Area Sporting Goods,adventure-works\jillian0
+29655,Full-Service Bike Store,adventure-works\michael9
+29659,Genuine Bike Shop,adventure-works\jillian0
+29660,Extreme Riding Supplies,adventure-works\linda3
+29662,Fleet Bikes,adventure-works\linda3
+29663,Local Hardware Factory,adventure-works\jillian0
+29666,South Bike Company,adventure-works\garrett1
+29668,Discount Bicycle Specialists,adventure-works\jillian0
+29671,Machines & Cycles Store,adventure-works\garrett1
+29673,Two Wheels Cycle Store,adventure-works\linda3
+29674,Westside Cycle Store,adventure-works\jillian0
+29677,Urban Sports Emporium,adventure-works\josé1
+29680,Sixth Bike Store,adventure-works\josé1
+29682,Vehicle Shop,adventure-works\shu0
+29683,First Department Stores,adventure-works\david8
+29684,Grand Sport Boutique,adventure-works\michael9
+29686,Distinctive Store,adventure-works\shu0
+29688,Handy Bike Services,adventure-works\michael9
+29689,Friendly Bike Shop,adventure-works\david8
+29690,Fashionable Bikes and Accessories,adventure-works\shu0
+29692,Citywide Service and Repair,adventure-works\josé1
+29695,Rugged Bikes,adventure-works\david8
+29696,Principal Bike Company,adventure-works\shu0
+29698,Finer Riding Supplies,adventure-works\josé1
+29699,Neighborhood Store,adventure-works\garrett1
+29702,Paint Supply,adventure-works\jillian0
+29703,Preferred Bikes,adventure-works\linda3
+29705,Rewarding Activities Company,adventure-works\garrett1
+29708,Stationary Bikes and Stands,adventure-works\jillian0
+29709,Successful Sales Company,adventure-works\pamela0
+29710,Downtown Hotel,adventure-works\shu0
+29711,Certified Sports Supply,adventure-works\josé1
+29713,Rampart Amusement Company,adventure-works\jae0
+29714,Sundry Sporting Goods,adventure-works\josé1
+29716,Farthermost Bike Shop,adventure-works\shu0
+29717,Suburban Cycle Shop,adventure-works\david8
+29719,Racing Bike Outlet,adventure-works\david8
+29720,Utilitarian Sporting Goods,adventure-works\shu0
+29722,Vigorous Exercise Company,adventure-works\josé1
+29727,Stock Parts and Supplies,adventure-works\david8
+29728,Roadway Supplies,adventure-works\shu0
+29730,Future Bikes,adventure-works\josé1
+29732,Satin Finish Company,adventure-works\jillian0
+29733,Regional Manufacturing,adventure-works\shu0
+29734,Original Bicycle Supply Company,adventure-works\josé1
+29736,Action Bicycle Specialists,adventure-works\jae0
+29737,Roadway Bike Emporium,adventure-works\pamela0
+29738,Sleek Bikes ,adventure-works\jillian0
+29739,Retail Sporting Equipment,adventure-works\shu0
+29740,Price-Cutter Discount Bikes,adventure-works\josé1
+29741,Central Bicycle Specialists,adventure-works\jae0
+29742,Vast Bike Sales and Rental,adventure-works\pamela0
+29743,Summer Sports Place,adventure-works\jillian0
+29744,Real Sporting Goods,adventure-works\shu0
+29747,The Bike Shop,adventure-works\david8
+29748,Safe Toys,adventure-works\shu0
+29750,Our Sporting Goods Store,adventure-works\josé1
+29753,Coho Sports,adventure-works\david8
+29755,Quick Delivery Service,adventure-works\garrett1
+29757,Basic Sports Equipment,adventure-works\linda3
+29758,Cash & Carry Bikes,adventure-works\jillian0
+29761,General Bike Corporation,adventure-works\garrett1
+29763,Retail Cycle Shop,adventure-works\linda3
+29764,Social Activities Club,adventure-works\jillian0
+29765,Blue Bicycle Company,adventure-works\michael9
+29766,General Riding Supplies,adventure-works\garrett1
+29768,Riding Excursions,adventure-works\linda3
+29769,Unique Bikes,adventure-works\jillian0
+29770,Rural Cycle Emporium,adventure-works\josé1
+29771,Associated Bikes,adventure-works\shu0
+29772,Modular Cycle Systems,adventure-works\jillian0
+29773,A Bike Store,adventure-works\pamela0
+29774,Journey Sporting Goods,adventure-works\jillian0
+29775,Two Bike Shops,adventure-works\pamela0
+29776,Cycles Wholesaler & Mfg.,adventure-works\jae0
+29778,Number One Bike Co.,adventure-works\jae0
+29780,Standard Bikes,adventure-works\josé1
+29781,The Bicycle Accessories Company,adventure-works\shu0
+29782,Active Systems,adventure-works\jillian0
+29783,Futuristic Sport Distributors,adventure-works\shu0
+29784,Big-Time Bike Store,adventure-works\shu0
+29785,The Showroom,adventure-works\josé1
+29787,Year-Round Sports,adventure-works\david8
+29788,The New Bike Store,adventure-works\linda3
+29789,Primary Bike Distributors,adventure-works\garrett1
+29792,Genial Bike Associates,adventure-works\jillian0
+29793,Commercial Sporting Goods,adventure-works\shu0
+29794,Wholesale Parts,adventure-works\josé1
+29796,Riding Cycles,adventure-works\jae0
+29797,Metro Manufacturing,adventure-works\josé1
+29799,Locks Company,adventure-works\shu0
+29800,Latest Accessories Sales,adventure-works\david8
+29803,Greater Bike Store,adventure-works\josé1
+29805,Distant Inn,adventure-works\shu0
+29806,Finer Mart,adventure-works\david8
+29807,Cross-Country Riding Supplies,adventure-works\josé1
+29809,Bike World,adventure-works\shu0
+29810,Central Discount Store,adventure-works\david8
+29813,Sharp Bikes,adventure-works\josé1
+29815,Metropolitan Sports Supply,adventure-works\shu0
+29816,Progressive Sports,adventure-works\david8
+29818,Brakes and Gears,adventure-works\linda3
+29819,The Accessories Store,adventure-works\jillian0
+29822,Family Cycle Store,adventure-works\garrett1
+29824,Superb Sales and Repair,adventure-works\garrett1
+29826,Countryside Company,adventure-works\linda3
+29827,First Bike Store,adventure-works\jillian0
+29830,General Department Stores,adventure-works\garrett1
+29831,Operational Manufacturing,adventure-works\garrett1
+29832,Online Bike Warehouse,adventure-works\josé1
+29834,Small Bike Shop,adventure-works\shu0
+29835,Superior Hardware Distributors,adventure-works\david8
+29840,Eastside Parts Shop,adventure-works\josé1
+29842,First Cycle Store,adventure-works\shu0
+29843,Running and Cycling Gear,adventure-works\david8
+29847,Good Toys,adventure-works\linda3
+29848,Little Bicycle Supply Shop,adventure-works\jillian0
+29850,All Seasons Sports Supply,adventure-works\jillian0
+29851,Leisure Clearing House,adventure-works\jae0
+29852,The Commissary,adventure-works\josé1
+29853,Affordable Sports Equipment,adventure-works\shu0
+29854,Local Sales and Rental,adventure-works\jillian0
+29855,Economy Center,adventure-works\josé1
+29857,Area Sheet Metal Supply,adventure-works\jae0
+29858,Synthetic Materials Manufacturing,adventure-works\pamela0
+29859,Rural Sales and Service,adventure-works\jillian0
+29860,Tubeless Tire Company,adventure-works\jae0
+29861,Hardware Components,adventure-works\jillian0
+29862,Retail Sporting Goods,adventure-works\shu0
+29863,Efficient Cycling,adventure-works\josé1
+29864,General Industries,adventure-works\josé1
+29865,Highway Bike Shop,adventure-works\shu0
+29866,Rental Bikes,adventure-works\jillian0
+29867,Roving Sports,adventure-works\pamela0
+29868,Express Bike Services,adventure-works\jae0
+29870,Retail Discount Store,adventure-works\josé1
+29871,Vale Riding Supplies,adventure-works\shu0
+29872,A Great Bicycle Company,adventure-works\jillian0
+29873,Certified Bicycle Supply,adventure-works\pamela0
+29874,Exceptional Cycle Services,adventure-works\jae0
+29876,Leisure Activities,adventure-works\josé1
+29877,Paints and Solvents Company,adventure-works\shu0
+29879,Bikes for Kids and Adults,adventure-works\josé1
+29881,Home Town Bike Store,adventure-works\garrett1
+29883,Sample Bike Store,adventure-works\linda3
+29884,Extras Sporting Goods,adventure-works\jillian0
+29885,Sure & Reliable Sporting Goods,adventure-works\david8
+29889,Separate Parts Corporation,adventure-works\shu0
+29890,Basic Bike Company,adventure-works\david8
+29891,"Fabrikam Inc., West",adventure-works\michael9
+29892,Non-Slip Pedal Company,adventure-works\josé1
+29893,Weekend Bike Tours,adventure-works\shu0
+29895,General Supplies,adventure-works\josé1
+29897,Racing Toys,adventure-works\shu0
+29898,Capable Sales and Service,adventure-works\pamela0
+29900,Road Way Sales and Rental,adventure-works\josé1
+29901,Sturdy Toys,adventure-works\shu0
+29902,Beneficial Exercises and Activities,adventure-works\jillian0
+29903,Fad Outlet,adventure-works\pamela0
+29904,Commerce Bicycle Specialists,adventure-works\jae0
+29905,Acceptable Sales & Service,adventure-works\josé1
+29906,District Mall,adventure-works\jillian0
+29907,Fitness Supplies,adventure-works\pamela0
+29908,Mail Market,adventure-works\jae0
+29910,Twelfth Bike Store,adventure-works\josé1
+29911,Consolidated Messenger,adventure-works\garrett1
+29913,Field Trip Store,adventure-works\linda3
+29914,Finish and Sealant Products,adventure-works\shu0
+29915,Finer Parts Shop,adventure-works\david8
+29918,Up-To-Date Sports,adventure-works\josé1
+29919,Mountain Bike Center,adventure-works\shu0
+29920,Specialty Sports Store,adventure-works\jillian0
+29921,Scooters and Bikes Store,adventure-works\pamela0
+29922,Closest Bicycle Store,adventure-works\jae0
+29924,Reasonable Bicycle Sales,adventure-works\shu0
+29925,Outdoor Sports Supply,adventure-works\pamela0
+29926,Outdoor Aerobic Systems Company,adventure-works\jae0
+29928,Metal Clearing House,adventure-works\josé1
+29929,Many Bikes Store,adventure-works\shu0
+29930,Largest Bike Store,adventure-works\jillian0
+29931,Kickstands and Accessories Company,adventure-works\pamela0
+29932,Instruments and Parts Company,adventure-works\jae0
+29934,Gear-Shift Bikes Limited,adventure-works\josé1
+29935,Frugal Bike Shop,adventure-works\shu0
+29936,Family Entertainment Center,adventure-works\pamela0
+29937,Go-cart and Bike Specialists,adventure-works\jillian0
+29938,Trailblazing Sports,adventure-works\shu0
+29939,Racing Partners,adventure-works\josé1
+29941,Exhibition Showroom,adventure-works\jae0
+29942,Authorized Bike Sales and Rental,adventure-works\pamela0
+29943,Two-Seater Bikes,adventure-works\jillian0
+29944,More Bikes!,adventure-works\linda3
+29946,National Manufacturing,adventure-works\garrett1
+29948,Town Industries,adventure-works\jillian0
+29949,Security Racks and Locks Wholesalers,adventure-works\shu0
+29950,Rapid Bikes,adventure-works\josé1
+29952,Nearby Sporting Goods,adventure-works\jae0
+29953,Front Sporting Goods,adventure-works\pamela0
+29954,Elite Bikes,adventure-works\jillian0
+29955,Catalog Store,adventure-works\michael9
+29956,Chic Department Stores,adventure-works\jillian0
+29957,Eastside Department Store,adventure-works\linda3
+29959,Cycle Merchants,adventure-works\garrett1
+29962,Fitness Hotel,adventure-works\jillian0
+29964,Grand Industries,adventure-works\garrett1
+29967,Leading Sales & Repair,adventure-works\jillian0
+29969,Tandem Sales and Service,adventure-works\garrett1
+29971,Reliable Retail Center,adventure-works\garrett1
+29973,Friendly Bike Shop,adventure-works\michael9
+29974,Yellow Bicycle Company,adventure-works\jillian0
+29975,Sports Products Store,adventure-works\linda3
+29978,Shipping Specialists,adventure-works\jae0
+29980,Authentic Sales and Service,adventure-works\jae0
+29981,Official Parts Shop,adventure-works\pamela0
+29982,Discount Tours,adventure-works\shu0
+29983,Tire Exchange,adventure-works\josé1
+29985,Oils and Fluids Warehouse,adventure-works\jae0
+29987,Rally Master Company Inc,adventure-works\shu0
+29988,Professional Cyclists,adventure-works\josé1
+29990,Exclusive Bicycle Mart,adventure-works\jae0
+29991,City Manufacturing,adventure-works\pamela0
+29992,Bike Dealers Association,adventure-works\shu0
+29994,"Health Spa, Limited",adventure-works\josé1
+29997,Closeout Boutique,adventure-works\david8
+29998,Bicycle Merchandise Warehouse,adventure-works\shu0
+30000,Leather Seat Factory,adventure-works\josé1
+30003,Practical Bike Supply Company,adventure-works\jillian0
+30004,Some Discount Store,adventure-works\pamela0
+30005,Variety Cycling,adventure-works\jae0
+30007,Remote Bicycle Specialists,adventure-works\josé1
+30008,Friendly Neighborhood Bikes,adventure-works\jillian0
+30010,Recommended Bicycles,adventure-works\garrett1
+30012,Alpine Ski House,adventure-works\linda3
+30016,Seats and Saddles Company,adventure-works\garrett1
+30018,All Cycle Shop,adventure-works\pamela0
+30019,Tachometers and Accessories,adventure-works\jae0
+30021,Low Price Cycles,adventure-works\josé1
+30022,Metropolitan Manufacturing,adventure-works\shu0
+30023,Orange Bicycle Company,adventure-works\jillian0
+30024,Riding Associates,adventure-works\pamela0
+30025,Essential Bike Works,adventure-works\jae0
+30027,Engineered Bike Systems,adventure-works\shu0
+30028,Professional Containers and Packaging Co.,adventure-works\shu0
+30029,One Bike Company,adventure-works\josé1
+30030,Cycling Goods,adventure-works\jae0
+30031,Cycle Clearance,adventure-works\pamela0
+30032,Black Bicycle Company,adventure-works\jillian0
+30033,Transport Bikes,adventure-works\shu0
+30034,Sellers of Cycles,adventure-works\pamela0
+30035,Maintenance and Repair for Bicycles,adventure-works\jillian0
+30036,Fitness Department Stores,adventure-works\shu0
+30037,Famous Bike Shop,adventure-works\garrett1
+30039,Gift and Toy Store,adventure-works\jillian0
+30040,Major Sporting Goods,adventure-works\linda3
+30042,Major Cycling,adventure-works\josé1
+30044,Downhill Bicycle Specialists,adventure-works\jae0
+30045,Bike Experts,adventure-works\pamela0
+30046,Extraordinary Bike Works,adventure-works\jillian0
+30047,Valley Bicycle Distributors,adventure-works\shu0
+30048,Top Sports Supply,adventure-works\josé1
+30050,Metropolitan Bicycle Supply,adventure-works\jae0
+30051,Honest Repair Service,adventure-works\pamela0
+30052,Wheel Gallery,adventure-works\shu0
+30053,Top Bike Market,adventure-works\garrett1
+30055,Bicycle Lines Distributors,adventure-works\jillian0
+30056,Sparkling Paint and Finishes,adventure-works\linda3
+30058,Plastic Parts Company,adventure-works\garrett1
+30061,Big Cycle Mall,adventure-works\jillian0
+30063,Eighth Bike Store,adventure-works\shu0
+30064,Demand Distributors,adventure-works\david8
+30067,Red Bicycle Company,adventure-works\josé1
+30069,Trendy Department Stores,adventure-works\shu0
+30070,Vintage Sport Boutique,adventure-works\david8
+30071,Travel Sports,adventure-works\pamela0
+30072,West Side Mart,adventure-works\jae0
+30074,Tenth Bike Store,adventure-works\josé1
+30076,Fun Times Club,adventure-works\shu0
+30080,Wingtip Toys,adventure-works\david8
+30083,Active Life Toys,adventure-works\josé1
+30087,Quick Parts and Service,adventure-works\garrett1
+30089,Thrifty Parts and Sales,adventure-works\linda3
+30090,A Typical Bike Shop,adventure-works\jillian0
+30093,Fasteners & Bolts Outlet,adventure-works\garrett1
+30094,Quantity Discounts,adventure-works\linda3
+30095,Swift Cycles,adventure-works\jillian0
+30098,Large Bike Shop,adventure-works\garrett1
+30100,Wire Baskets and Parts,adventure-works\linda3
+30102,Sports Store,adventure-works\jae0
+30104,Extended Tours,adventure-works\jae0
+30105,Convenient Sales and Service,adventure-works\pamela0
+30106,Solid Bike Parts,adventure-works\jillian0
+30107,Permanent Finish Products,adventure-works\shu0
+30108,Mercantile Outlet,adventure-works\josé1
+30109,Exhilarating Cycles,adventure-works\michael9
+30110,Exercise Center,adventure-works\shu0
+30111,Great Bicycle Supply,adventure-works\jillian0
+30112,Mail-Order Outlet,adventure-works\pamela0
+30113,Nearby Cycle Shop,adventure-works\jae0
+30115,Retreat Inn,adventure-works\josé1
+30116,Technical Parts Manufacturing,adventure-works\shu0
+30117,Totes & Baskets Company,adventure-works\jillian0
+30118,World of Bikes,adventure-works\jillian0
