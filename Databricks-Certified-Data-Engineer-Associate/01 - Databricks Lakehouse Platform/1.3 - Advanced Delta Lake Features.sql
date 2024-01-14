@@ -42,6 +42,10 @@ ZORDER BY id
 
 -- COMMAND ----------
 
+DESCRIBE HISTORY employees
+
+-- COMMAND ----------
+
 DESCRIBE DETAIL employees
 
 -- COMMAND ----------
@@ -55,6 +59,14 @@ VACUUM employees
 -- COMMAND ----------
 
 -- MAGIC %fs ls 'dbfs:/user/hive/warehouse/employees'
+
+-- COMMAND ----------
+
+VACUUM employees RETAIN 0 HOURS
+
+-- COMMAND ----------
+
+SET spark.databricks.delta.retentionDurationCheck.enable = false
 
 -- COMMAND ----------
 
