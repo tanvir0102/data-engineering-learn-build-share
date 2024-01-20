@@ -1,0 +1,22 @@
+[
+    {
+        "sourceBaseURL":"https://github.com",
+		"sourceRelativeURL":"tanvir0102/data-engineering-learn-build-share/raw/main/covid19-prediction-reporting-on-azure/ecdc_data/cases_deaths.csv",
+        "sinkFileName":"cases_deaths.csv"
+    },
+    {
+        "sourceBaseURL":"https://github.com",
+		"sourceRelativeURL":"tanvir0102/data-engineering-learn-build-share/raw/main/covid19-prediction-reporting-on-azure/ecdc_data/hospital_admissions.csv",
+        "sinkFileName":"hospital_admissions.csv"
+    },
+	{
+        "sourceBaseURL":"https://github.com",
+		"sourceRelativeURL":"tanvir0102/data-engineering-learn-build-share/raw/main/covid19-prediction-reporting-on-azure/ecdc_data/country_response.csv",
+        "sinkFileName":"country_response.csv"
+    },
+	{
+        "sourceBaseURL":"https://github.com",
+		"sourceRelativeURL":"tanvir0102/data-engineering-learn-build-share/raw/main/covid19-prediction-reporting-on-azure/ecdc_data/testing.csv",
+        "sinkFileName":"testing.csv"
+    }
+]
