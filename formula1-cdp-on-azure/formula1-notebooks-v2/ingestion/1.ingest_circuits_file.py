@@ -85,8 +85,4 @@ circuits_final_df.write.mode("overwrite").parquet(f"{processed_forlder_path}/cir
 
 # COMMAND ----------
 
-processed_forlder_path
-
-# COMMAND ----------
-
 
