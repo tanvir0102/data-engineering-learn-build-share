@@ -61,4 +61,4 @@ final_df.write.mode("overwrite").parquet("/mnt/formula1dl012024/processed/qualif
 
 # COMMAND ----------
 
-
+dbutils.notebook.exit("Success")

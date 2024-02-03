@@ -4,6 +4,14 @@
 
 # COMMAND ----------
 
+# MAGIC %run "../includes/configuration"
+
+# COMMAND ----------
+
+# MAGIC %run "../includes/common_functions"
+
+# COMMAND ----------
+
 # MAGIC %md
 # MAGIC #### Step 1 - Read CSV file using the spark dataframe reader
 
@@ -28,7 +36,7 @@ races_schema = StructType(fields=[StructField("raceId", IntegerType(), False),
 races_df = spark.read \
 .option("header",True) \
 .schema(races_schema) \
-.csv("/mnt/formula1dl012024/raw/races.csv")
+.csv(f"{raw_forder_path}/races.csv")
 
 # COMMAND ----------
 
@@ -41,8 +49,11 @@ from pyspark.sql.functions import current_timestamp, to_timestamp, concat, col, 
 
 # COMMAND ----------
 
-races_with_timestamp_df = races_df.withColumn("ingestion_date", current_timestamp()) \
-                                  .withColumn("race_timestamp", to_timestamp(concat(col('date'), lit(' '), col('time')), 'yyyy-MM-dd HH:mm:ss'))
+races_with_timestamp_df = races_df.withColumn("race_timestamp", to_timestamp(concat(col('date'), lit(' '), col('time')), 'yyyy-MM-dd HH:mm:ss'))
+
+# COMMAND ----------
+
+races_with_ingestion_date_df = add_ingestion_date(races_with_timestamp_df)
 
 # COMMAND ----------
 
@@ -51,7 +62,7 @@ races_with_timestamp_df = races_df.withColumn("ingestion_date", current_timestam
 
 # COMMAND ----------
 
-races_final_df = races_with_timestamp_df.select(col('raceId').alias('race_id'), col('year').alias('race_year'), col('round'), col('circuitId').alias('circuit_id'), col('name'), col('ingestion_date'), col('race_timestamp'))
+races_final_df = races_with_ingestion_date_df.select(col('raceId').alias('race_id'), col('year').alias('race_year'), col('round'), col('circuitId').alias('circuit_id'), col('name'), col('ingestion_date'), col('race_timestamp'))
 
 # COMMAND ----------
 
@@ -60,8 +71,12 @@ races_final_df = races_with_timestamp_df.select(col('raceId').alias('race_id'), 
 
 # COMMAND ----------
 
-races_final_df.write.mode("overwrite").partitionBy('race_year').parquet("/mnt/formula1dl012024/processed/races")
+races_final_df.write.mode("overwrite").partitionBy('race_year').parquet(f"{presentation_folder_path}/races")
 
 # COMMAND ----------
 
+display(spark.read.parquet(f"{presentation_folder_path}/races"))
 
+# COMMAND ----------
+
+dbutils.notebook.exit("Success")

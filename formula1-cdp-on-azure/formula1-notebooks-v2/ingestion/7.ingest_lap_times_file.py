@@ -55,4 +55,4 @@ final_df.write.mode("overwrite").parquet("/mnt/formula1dl012024/processed/lap_ti
 
 # COMMAND ----------
 
-
+dbutils.notebook.exit("Success")

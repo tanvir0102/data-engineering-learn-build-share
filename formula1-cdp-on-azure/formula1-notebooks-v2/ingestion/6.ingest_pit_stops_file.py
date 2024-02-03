@@ -57,4 +57,4 @@ final_df.write.mode("overwrite").parquet("/mnt/formula1dl012024/processed/pit_st
 
 # COMMAND ----------
 
-
+dbutils.notebook.exit("Success")

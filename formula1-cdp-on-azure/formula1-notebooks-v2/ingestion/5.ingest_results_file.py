@@ -84,4 +84,4 @@ results_final_df.write.mode("overwrite").partitionBy('race_id').parquet("/mnt/fo
 
 # COMMAND ----------
 
-
+dbutils.notebook.exit("Success")

@@ -56,4 +56,4 @@ constructors_final_df.write.mode("overwrite").parquet("/mnt/formula1dl012024/pro
 
 # COMMAND ----------
 
-
+dbutils.notebook.exit("Success")
