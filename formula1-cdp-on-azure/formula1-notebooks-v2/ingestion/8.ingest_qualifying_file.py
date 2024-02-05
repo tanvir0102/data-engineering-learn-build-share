@@ -57,7 +57,12 @@ final_df = qualifying_df.withColumnRenamed("qualifyId", "qualify_id") \
 
 # COMMAND ----------
 
-final_df.write.mode("overwrite").parquet("/mnt/formula1dl012024/processed/qualifying")
+final_df.write.mode("overwrite").format("parquet").saveAsTable("f1_processed.qualifying")
+
+# COMMAND ----------
+
+# MAGIC %sql
+# MAGIC SELECT * FROM f1_processed.qualifying;
 
 # COMMAND ----------
 

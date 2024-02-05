@@ -51,7 +51,12 @@ final_df = lap_times_df.withColumnRenamed("driverId", "driver_id") \
 
 # COMMAND ----------
 
-final_df.write.mode("overwrite").parquet("/mnt/formula1dl012024/processed/lap_times")
+final_df.write.mode("overwrite").format("parquet").saveAsTable("f1_processed.lap_times")
+
+# COMMAND ----------
+
+# MAGIC %sql
+# MAGIC SELECT * FROM f1_processed.lap_times;
 
 # COMMAND ----------
 

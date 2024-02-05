@@ -52,7 +52,12 @@ constructors_final_df = constructors_dropped_df.withColumnRenamed("constructorId
 
 # COMMAND ----------
 
-constructors_final_df.write.mode("overwrite").parquet("/mnt/formula1dl012024/processed/constructors")
+constructors_final_df.write.mode("overwrite").format("parquet").saveAsTable("f1_processed.constructors")
+
+# COMMAND ----------
+
+# MAGIC %sql
+# MAGIC SELECT * FROM f1_processed.constructors;
 
 # COMMAND ----------
 
