@@ -1,5 +1,5 @@
 -- Count the number of athletes from each country
-SELECT Country, COUNT() AS TotalAthletes
+SELECT Country, COUNT(*) AS TotalAthletes
 FROM athletes
 GROUP BY Country
 ORDER BY TotalAthletes DESC;

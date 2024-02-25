@@ -1,0 +1,21 @@
+Application (client) ID : 
+Directory (tenant) ID : 
+App Secrets: 
+
+
+====================================================================
+Key vaults: tokyo-olympic-vault
+
+client_id = tokyo-olympic-app-client-id
+tenant_id = tokyo-olympic-app-tenant-id
+client_secret = tokyo-olympic-app-client-secret
+
+scope: tokyo-olympic-scope
+
+
+
+tokyoolympicdatadl24
+tokyo-olympic-data/raw-data
+tokyo-olympic-data/processed-data
+
+
