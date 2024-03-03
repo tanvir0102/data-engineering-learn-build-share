@@ -25,7 +25,7 @@ lap_times_schema = StructType(fields=[StructField("raceId", IntegerType(), False
 
 lap_times_df = spark.read \
 .schema(lap_times_schema) \
-.csv("/mnt/formula1dl012024/raw/lap_times")
+.csv("/mnt/formula1dl2024a/raw/lap_times")
 
 # COMMAND ----------
 
@@ -51,7 +51,7 @@ final_df = lap_times_df.withColumnRenamed("driverId", "driver_id") \
 
 # COMMAND ----------
 
-final_df.write.mode("overwrite").parquet("/mnt/formula1dl012024/processed/lap_times")
+final_df.write.mode("overwrite").parquet("/mnt/formula1dl2024a/processed/lap_times")
 
 # COMMAND ----------
 

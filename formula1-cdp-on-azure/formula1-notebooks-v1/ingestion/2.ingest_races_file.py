@@ -28,7 +28,7 @@ races_schema = StructType(fields=[StructField("raceId", IntegerType(), False),
 races_df = spark.read \
 .option("header",True) \
 .schema(races_schema) \
-.csv("/mnt/formula1dl012024/raw/races.csv")
+.csv("/mnt/formula1dl2024a/raw/races.csv")
 
 # COMMAND ----------
 
@@ -60,7 +60,7 @@ races_final_df = races_with_timestamp_df.select(col('raceId').alias('race_id'), 
 
 # COMMAND ----------
 
-races_final_df.write.mode("overwrite").partitionBy('race_year').parquet("/mnt/formula1dl012024/processed/races")
+races_final_df.write.mode("overwrite").partitionBy('race_year').parquet("/mnt/formula1dl2024a/processed/races")
 
 # COMMAND ----------
 

@@ -29,7 +29,7 @@ qualifying_schema = StructType(fields=[StructField("qualifyId", IntegerType(), F
 qualifying_df = spark.read \
 .schema(qualifying_schema) \
 .option("multiLine", True) \
-.json("/mnt/formula1dl012024/raw/qualifying")
+.json("/mnt/formula1dl2024a/raw/qualifying")
 
 # COMMAND ----------
 
@@ -57,7 +57,7 @@ final_df = qualifying_df.withColumnRenamed("qualifyId", "qualify_id") \
 
 # COMMAND ----------
 
-final_df.write.mode("overwrite").parquet("/mnt/formula1dl012024/processed/qualifying")
+final_df.write.mode("overwrite").parquet("/mnt/formula1dl2024a/processed/qualifying")
 
 # COMMAND ----------
 

@@ -29,7 +29,7 @@ circuits_schema = StructType(fields=[StructField("circuitId", IntegerType(), Fal
 circuits_df = spark.read \
 .option("header",True) \
 .schema(circuits_schema) \
-.csv("/mnt/formula1dl012024/raw/circuits.csv")
+.csv("/mnt/formula1dl2024a/raw/circuits.csv")
 
 # COMMAND ----------
 
@@ -81,7 +81,7 @@ display(circuits_final_df)
 
 # COMMAND ----------
 
-circuits_final_df.write.mode("overwrite").parquet("/mnt/formula1dl012024/processed/circuits")
+circuits_final_df.write.mode("overwrite").parquet("/mnt/formula1dl2024a/processed/circuits")
 
 # COMMAND ----------
 

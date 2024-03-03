@@ -31,15 +31,15 @@ def mount_adls(storage_account_name, container_name):
 
 # COMMAND ----------
 
-mount_adls('formula1dl012024', 'raw')
+mount_adls('formula1dl2024a', 'raw')
 
 # COMMAND ----------
 
-mount_adls('formula1dl012024', 'processed')
+mount_adls('formula1dl2024a', 'processed')
 
 # COMMAND ----------
 
-mount_adls('formula1dl012024', 'presentation')
+mount_adls('formula1dl2024a', 'presentation')
 
 # COMMAND ----------
 

@@ -27,7 +27,7 @@ pit_stops_schema = StructType(fields=[StructField("raceId", IntegerType(), False
 pit_stops_df = spark.read \
 .schema(pit_stops_schema) \
 .option("multiLine", True) \
-.json("/mnt/formula1dl012024/raw/pit_stops.json")
+.json("/mnt/formula1dl2024a/raw/pit_stops.json")
 
 # COMMAND ----------
 
@@ -53,7 +53,7 @@ final_df = pit_stops_df.withColumnRenamed("driverId", "driver_id") \
 
 # COMMAND ----------
 
-final_df.write.mode("overwrite").parquet("/mnt/formula1dl012024/processed/pit_stops")
+final_df.write.mode("overwrite").parquet("/mnt/formula1dl2024a/processed/pit_stops")
 
 # COMMAND ----------
 
