@@ -9,9 +9,9 @@
 
 # COMMAND ----------
 
-client_id = ""
-tenant_id = ""
-client_secret = ""
+client_id = dbutils.secrets.get(scope = 'formula1-scope', key = 'formula1-app-client-id')
+tenant_id = dbutils.secrets.get(scope = 'formula1-scope', key = 'formula1-app-tenant-id')
+client_secret = dbutils.secrets.get(scope = 'formula1-scope', key = 'formula1-app-client-secret')
 
 # COMMAND ----------
 
