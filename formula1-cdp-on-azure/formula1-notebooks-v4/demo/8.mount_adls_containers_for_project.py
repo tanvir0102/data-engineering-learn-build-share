@@ -31,6 +31,11 @@ def mount_adls(storage_account_name, container_name):
 
 # COMMAND ----------
 
+# MAGIC %md
+# MAGIC ##### Mount Raw Container
+
+# COMMAND ----------
+
 mount_adls('formula1dl2024a', 'raw')
 
 # COMMAND ----------
