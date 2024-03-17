@@ -78,4 +78,8 @@ drivers_final_df.write.mode("overwrite").parquet("/mnt/formula1dl2024a/processed
 
 # COMMAND ----------
 
+display(spark.read.parquet("/mnt/formula1dl2024a/processed/drivers"))
+
+# COMMAND ----------
+
 

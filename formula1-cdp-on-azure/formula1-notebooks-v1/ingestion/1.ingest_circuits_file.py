@@ -85,4 +85,8 @@ circuits_final_df.write.mode("overwrite").parquet("/mnt/formula1dl2024a/processe
 
 # COMMAND ----------
 
+display(spark.read.parquet("/mnt/formula1dl2024a/processed/circuits"))
+
+# COMMAND ----------
+
 
