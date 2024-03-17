@@ -135,7 +135,7 @@ DESC EXTENDED demo.race_results_ext_py
 
 -- COMMAND ----------
 
-CREATE TABLE demo.race_results_ext_sql
+CREATE TABLE IF NOT EXISTS demo.race_results_ext_sql
 (race_year INT,
 race_name STRING,
 race_date TIMESTAMP,
@@ -152,7 +152,7 @@ position INT,
 created_date TIMESTAMP
 )
 USING parquet
-LOCATION "/mnt/formula1dl/presentation/race_results_ext_sql"
+LOCATION "/mnt/formula1dl2024a/presentation/race_results_ext_sql"
 
 -- COMMAND ----------
 

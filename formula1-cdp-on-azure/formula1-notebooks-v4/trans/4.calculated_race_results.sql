@@ -3,7 +3,7 @@ USE f1_processed;
 
 -- COMMAND ----------
 
-CREATE TABLE f1_presentation.calculated_race_results
+CREATE TABLE IF NOT EXISTS f1_presentation.calculated_race_results
 USING parquet
 AS
 SELECT races.race_year,

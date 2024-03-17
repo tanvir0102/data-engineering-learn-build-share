@@ -8,7 +8,7 @@
 
 # COMMAND ----------
 
-drivers_df = spark.read.parquet(f"{processed_forlder_path}/drivers") \
+drivers_df = spark.read.parquet(f"{processed_folder_path}/drivers") \
     .withColumnRenamed("number", "driver_number") \
     .withColumnRenamed("name", "driver_name") \
     .withColumnRenamed("nationality", "driver_nationality")
@@ -16,23 +16,23 @@ drivers_df = spark.read.parquet(f"{processed_forlder_path}/drivers") \
 
 # COMMAND ----------
 
-constructors_df = spark.read.parquet(f"{processed_forlder_path}/constructors") \
+constructors_df = spark.read.parquet(f"{processed_folder_path}/constructors") \
     .withColumnRenamed("name", "team")
 
 # COMMAND ----------
 
-circuits_df = spark.read.parquet(f"{processed_forlder_path}/circuits") \
+circuits_df = spark.read.parquet(f"{processed_folder_path}/circuits") \
     .withColumnRenamed("location", "circuit_location")
 
 # COMMAND ----------
 
-races_df = spark.read.parquet(f"{processed_forlder_path}/races") \
+races_df = spark.read.parquet(f"{processed_folder_path}/races") \
     .withColumnRenamed("name", "race_name") \
     .withColumnRenamed("race_timestamp", "race_date")
 
 # COMMAND ----------
 
-results_df = spark.read.parquet(f"{processed_forlder_path}/results") \
+results_df = spark.read.parquet(f"{processed_folder_path}/results") \
     .withColumnRenamed("time", "race_time")
 
 # COMMAND ----------
