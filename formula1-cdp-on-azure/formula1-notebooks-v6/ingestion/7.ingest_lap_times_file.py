@@ -90,3 +90,11 @@ overwrite_partition(final_df, 'f1_processed', 'lap_times', 'race_id')
 # COMMAND ----------
 
 dbutils.notebook.exit("Success")
+
+# COMMAND ----------
+
+# MAGIC %sql
+# MAGIC SELECT race_id, COUNT(1) 
+# MAGIC FROM f1_processed.lap_times
+# MAGIC GROUP BY race_id
+# MAGIC ORDER BY race_id DESC;

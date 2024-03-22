@@ -17,6 +17,11 @@ v_file_date = dbutils.widgets.get("p_file_date")
 
 # COMMAND ----------
 
+# MAGIC %sql
+# MAGIC -- DROP TABLE f1_presentation.race_results;
+
+# COMMAND ----------
+
 drivers_df = spark.read.parquet(f"{processed_folder_path}/drivers") \
     .withColumnRenamed("number", "driver_number") \
     .withColumnRenamed("name", "driver_name") \
@@ -25,13 +30,25 @@ drivers_df = spark.read.parquet(f"{processed_folder_path}/drivers") \
 
 # COMMAND ----------
 
+display(drivers_df)
+
+# COMMAND ----------
+
 constructors_df = spark.read.parquet(f"{processed_folder_path}/constructors") \
     .withColumnRenamed("name", "team")
 
 # COMMAND ----------
 
+display(constructors_df)
+
+# COMMAND ----------
+
 circuits_df = spark.read.parquet(f"{processed_folder_path}/circuits") \
     .withColumnRenamed("location", "circuit_location")
+
+# COMMAND ----------
+
+display(circuits_df)
 
 # COMMAND ----------
 
@@ -41,11 +58,19 @@ races_df = spark.read.parquet(f"{processed_folder_path}/races") \
 
 # COMMAND ----------
 
+display(races_df)
+
+# COMMAND ----------
+
 results_df = spark.read.parquet(f"{processed_folder_path}/results") \
     .filter(f"file_date = '{v_file_date}'") \
     .withColumnRenamed("time", "race_time") \
     .withColumnRenamed("race_id", "result_race_id") \
     .withColumnRenamed("file_date", "result_file_date")
+
+# COMMAND ----------
+
+display(results_df)
 
 # COMMAND ----------
 
@@ -59,6 +84,10 @@ race_circuits_df = races_df.join(circuits_df, races_df.circuit_id == circuits_df
 
 # COMMAND ----------
 
+display(race_circuits_df)
+
+# COMMAND ----------
+
 # MAGIC %md
 # MAGIC ##### Join results to all other dataframes
 
@@ -67,6 +96,10 @@ race_circuits_df = races_df.join(circuits_df, races_df.circuit_id == circuits_df
 race_results_df = results_df.join(race_circuits_df, results_df.result_race_id == race_circuits_df.race_id) \
     .join(drivers_df, results_df.driver_id == drivers_df.driver_id) \
     .join(constructors_df, results_df.constructor_id == constructors_df.constructor_id)
+
+# COMMAND ----------
+
+display(race_circuits_df)
 
 # COMMAND ----------
 

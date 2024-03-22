@@ -4,6 +4,11 @@
 
 # COMMAND ----------
 
+# MAGIC %sql
+# MAGIC -- DROP TABLE f1_presentation.driver_standings
+
+# COMMAND ----------
+
 dbutils.widgets.text("p_file_date", "2021-03-21")
 v_file_date = dbutils.widgets.get("p_file_date")
 
