@@ -4,6 +4,11 @@
 
 # COMMAND ----------
 
+# MAGIC %sql
+# MAGIC -- DROP TABLE f1_processed.results;
+
+# COMMAND ----------
+
 dbutils.widgets.text("p_data_source", "")
 v_data_source = dbutils.widgets.get("p_data_source")
 
@@ -95,27 +100,8 @@ results_final_df = results_with_columns_df.drop(col("statusId"))
 
 # COMMAND ----------
 
-results_deduped_df = results_final_df.dropDuplicates(['race_id', 'driver_id'])
-
-# COMMAND ----------
-
 # MAGIC %md
 # MAGIC ##### Step 4 - Write to output to processed container in parquet format
-
-# COMMAND ----------
-
-# MAGIC %md
-# MAGIC #### Methon 1
-
-# COMMAND ----------
-
-#for race_id_list in results_final_df.select("race_id").distinct().collect():
-#    if (spark._jsparkSession.catalog().tableExists("f1_processed.results")):
-#        spark.sql(f"ALTER TABLE f1_processed.results DROP IF EXISTS PARTITION (race_id = {race_id_list.race_id})")
-
-# COMMAND ----------
-
-# results_final_df.write.mode("append").partitionBy('race_id').format("parquet").saveAsTable("f1_processed.results")
 
 # COMMAND ----------
 
@@ -124,26 +110,12 @@ results_deduped_df = results_final_df.dropDuplicates(['race_id', 'driver_id'])
 
 # COMMAND ----------
 
-# output_df = re_arrange_partition_column(results_final_df, 'race_id')
-
-# COMMAND ----------
-
-# overwrite_partition(results_final_df, 'f1_processed', 'results', 'race_id')
-
-# COMMAND ----------
-
-merge_condition = "tgt.result_id = src.result_id AND tgt.race_id = src.race_id"
-merge_delta_data(results_deduped_df, 'f1_processed', 'results', processed_folder_path, merge_condition, 'race_id')
+overwrite_partition(results_final_df, 'f1_processed', 'results', 'race_id')
 
 # COMMAND ----------
 
 # MAGIC %sql
 # MAGIC SELECT * FROM f1_processed.results;
-
-# COMMAND ----------
-
-# MAGIC %sql
-# MAGIC -- DROP TABLE f1_processed.results;
 
 # COMMAND ----------
 
@@ -156,26 +128,3 @@ merge_delta_data(results_deduped_df, 'f1_processed', 'results', processed_folder
 # COMMAND ----------
 
 dbutils.notebook.exit("Success")
-
-# COMMAND ----------
-
-# MAGIC %sql
-# MAGIC SELECT COUNT(1)
-# MAGIC   FROM f1_processed.results;
-
-# COMMAND ----------
-
-# MAGIC %sql
-# MAGIC SELECT race_id, driver_id, COUNT(1) 
-# MAGIC FROM f1_processed.results
-# MAGIC GROUP BY race_id, driver_id
-# MAGIC HAVING COUNT(1) > 1
-# MAGIC ORDER BY race_id, driver_id DESC;
-
-# COMMAND ----------
-
-# MAGIC %sql SELECT * FROM f1_processed.results WHERE race_id = 540 AND driver_id = 229;
-
-# COMMAND ----------
-
-

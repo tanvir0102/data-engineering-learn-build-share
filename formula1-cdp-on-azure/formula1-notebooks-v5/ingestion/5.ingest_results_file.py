@@ -101,30 +101,17 @@ results_final_df = results_with_columns_df.drop(col("statusId"))
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC #### Methon 1
+# MAGIC #### Method 1
 
 # COMMAND ----------
 
-#for race_id_list in results_final_df.select("race_id").distinct().collect():
-#    if (spark._jsparkSession.catalog().tableExists("f1_processed.results")):
-#        spark.sql(f"ALTER TABLE f1_processed.results DROP IF EXISTS PARTITION (race_id = {race_id_list.race_id})")
+for race_id_list in results_final_df.select("race_id").distinct().collect():
+    if (spark._jsparkSession.catalog().tableExists("f1_processed.results")):
+        spark.sql(f"ALTER TABLE f1_processed.results DROP IF EXISTS PARTITION (race_id = {race_id_list.race_id})")
 
 # COMMAND ----------
 
-# results_final_df.write.mode("append").partitionBy('race_id').format("parquet").saveAsTable("f1_processed.results")
-
-# COMMAND ----------
-
-# MAGIC %md
-# MAGIC #### Method 2
-
-# COMMAND ----------
-
-output_df = re_arrange_partition_column(results_final_df, 'race_id')
-
-# COMMAND ----------
-
-overwrite_partition(results_final_df, 'f1_processed', 'results', 'race_id')
+results_final_df.write.mode("append").partitionBy('race_id').format("parquet").saveAsTable("f1_processed.results")
 
 # COMMAND ----------
 

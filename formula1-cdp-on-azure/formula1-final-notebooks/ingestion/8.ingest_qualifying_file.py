@@ -81,7 +81,12 @@ final_df = qualifying_with_ingestion_date_df.withColumnRenamed("qualifyId", "qua
 
 # COMMAND ----------
 
-overwrite_partition(final_df, 'f1_processed', 'qualifying', 'race_id')
+# overwrite_partition(final_df, 'f1_processed', 'qualifying', 'race_id')
+
+# COMMAND ----------
+
+merge_condition = "tgt.qualify_id = src.qualify_id AND tgt.race_id = src.race_id"
+merge_delta_data(final_df, 'f1_processed', 'qualifying', processed_folder_path, merge_condition, 'race_id')
 
 # COMMAND ----------
 

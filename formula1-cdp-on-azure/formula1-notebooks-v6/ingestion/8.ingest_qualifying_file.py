@@ -1,6 +1,11 @@
 # Databricks notebook source
 # MAGIC %md
-# MAGIC ### Ingest lap_times folder
+# MAGIC ### Ingest qualifying json files
+
+# COMMAND ----------
+
+# MAGIC %sql
+# MAGIC -- DROP TABLE f1_processed.qualifying
 
 # COMMAND ----------
 
@@ -23,7 +28,7 @@ v_file_date = dbutils.widgets.get("p_file_date")
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC ##### Step 1 - Read the CSV file using the spark dataframe reader API
+# MAGIC ##### Step 1 - Read the JSON file using the spark dataframe reader API
 
 # COMMAND ----------
 
@@ -31,30 +36,34 @@ from pyspark.sql.types import StructType, StructField, IntegerType, StringType
 
 # COMMAND ----------
 
-lap_times_schema = StructType(fields=[StructField("raceId", IntegerType(), False),
+qualifying_schema = StructType(fields=[StructField("qualifyId", IntegerType(), False),
+                                      StructField("raceId", IntegerType(), True),
                                       StructField("driverId", IntegerType(), True),
-                                      StructField("lap", IntegerType(), True),
+                                      StructField("constructorId", IntegerType(), True),
+                                      StructField("number", IntegerType(), True),
                                       StructField("position", IntegerType(), True),
-                                      StructField("time", StringType(), True),
-                                      StructField("milliseconds", IntegerType(), True)
+                                      StructField("q1", StringType(), True),
+                                      StructField("q2", StringType(), True),
+                                      StructField("q3", StringType(), True),
                                      ])
 
 # COMMAND ----------
 
-lap_times_df = spark.read \
-.schema(lap_times_schema) \
-.csv(f"{raw_folder_path}/{v_file_date}/lap_times")
+qualifying_df = spark.read \
+.schema(qualifying_schema) \
+.option("multiLine", True) \
+.json(f"{raw_folder_path}/{v_file_date}/qualifying")
 
 # COMMAND ----------
 
 # MAGIC %md
 # MAGIC ##### Step 2 - Rename columns and add new columns
-# MAGIC 1. Rename driverId and raceId
+# MAGIC 1. Rename qualifyingId, driverId, constructorId and raceId
 # MAGIC 1. Add ingestion_date with current timestamp
 
 # COMMAND ----------
 
-lap_times_with_ingestion_date_df = add_ingestion_date(lap_times_df)
+qualifying_with_ingestion_date_df = add_ingestion_date(qualifying_df)
 
 # COMMAND ----------
 
@@ -62,8 +71,10 @@ from pyspark.sql.functions import lit
 
 # COMMAND ----------
 
-final_df = lap_times_with_ingestion_date_df.withColumnRenamed("driverId", "driver_id") \
+final_df = qualifying_with_ingestion_date_df.withColumnRenamed("qualifyId", "qualify_id") \
+.withColumnRenamed("driverId", "driver_id") \
 .withColumnRenamed("raceId", "race_id") \
+.withColumnRenamed("constructorId", "constructor_id") \
 .withColumn("ingestion_date", current_timestamp()) \
 .withColumn("data_source", lit(v_data_source)) \
 .withColumn("file_date", lit(v_file_date))
@@ -75,17 +86,12 @@ final_df = lap_times_with_ingestion_date_df.withColumnRenamed("driverId", "drive
 
 # COMMAND ----------
 
-# overwrite_partition(final_df, 'f1_processed', 'lap_times', 'race_id')
-
-# COMMAND ----------
-
-merge_condition = "tgt.race_id = src.race_id AND tgt.driver_id = src.driver_id AND tgt.lap = src.lap AND tgt.race_id = src.race_id"
-merge_delta_data(final_df, 'f1_processed', 'lap_times', processed_folder_path, merge_condition, 'race_id')
+overwrite_partition(final_df, 'f1_processed', 'qualifying', 'race_id')
 
 # COMMAND ----------
 
 # MAGIC %sql
-# MAGIC SELECT * FROM f1_processed.lap_times;
+# MAGIC SELECT * FROM f1_processed.qualifying;
 
 # COMMAND ----------
 

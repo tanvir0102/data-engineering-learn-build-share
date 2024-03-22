@@ -1,6 +1,11 @@
 # Databricks notebook source
 # MAGIC %md
-# MAGIC ### Ingest lap_times folder
+# MAGIC ### Ingest pit_stops.json file
+
+# COMMAND ----------
+
+# MAGIC %sql
+# MAGIC -- DROP TABLE f1_processed.pit_stops
 
 # COMMAND ----------
 
@@ -23,7 +28,7 @@ v_file_date = dbutils.widgets.get("p_file_date")
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC ##### Step 1 - Read the CSV file using the spark dataframe reader API
+# MAGIC ##### Step 1 - Read the JSON file using the spark dataframe reader API
 
 # COMMAND ----------
 
@@ -31,19 +36,21 @@ from pyspark.sql.types import StructType, StructField, IntegerType, StringType
 
 # COMMAND ----------
 
-lap_times_schema = StructType(fields=[StructField("raceId", IntegerType(), False),
+pit_stops_schema = StructType(fields=[StructField("raceId", IntegerType(), False),
                                       StructField("driverId", IntegerType(), True),
+                                      StructField("stop", StringType(), True),
                                       StructField("lap", IntegerType(), True),
-                                      StructField("position", IntegerType(), True),
                                       StructField("time", StringType(), True),
+                                      StructField("duration", StringType(), True),
                                       StructField("milliseconds", IntegerType(), True)
                                      ])
 
 # COMMAND ----------
 
-lap_times_df = spark.read \
-.schema(lap_times_schema) \
-.csv(f"{raw_folder_path}/{v_file_date}/lap_times")
+pit_stops_df = spark.read \
+.schema(pit_stops_schema) \
+.option("multiLine", True) \
+.json(f"{raw_folder_path}/{v_file_date}/pit_stops.json")
 
 # COMMAND ----------
 
@@ -54,15 +61,11 @@ lap_times_df = spark.read \
 
 # COMMAND ----------
 
-lap_times_with_ingestion_date_df = add_ingestion_date(lap_times_df)
+from pyspark.sql.functions import current_timestamp, lit
 
 # COMMAND ----------
 
-from pyspark.sql.functions import lit
-
-# COMMAND ----------
-
-final_df = lap_times_with_ingestion_date_df.withColumnRenamed("driverId", "driver_id") \
+final_df = pit_stops_df.withColumnRenamed("driverId", "driver_id") \
 .withColumnRenamed("raceId", "race_id") \
 .withColumn("ingestion_date", current_timestamp()) \
 .withColumn("data_source", lit(v_data_source)) \
@@ -75,17 +78,12 @@ final_df = lap_times_with_ingestion_date_df.withColumnRenamed("driverId", "drive
 
 # COMMAND ----------
 
-# overwrite_partition(final_df, 'f1_processed', 'lap_times', 'race_id')
-
-# COMMAND ----------
-
-merge_condition = "tgt.race_id = src.race_id AND tgt.driver_id = src.driver_id AND tgt.lap = src.lap AND tgt.race_id = src.race_id"
-merge_delta_data(final_df, 'f1_processed', 'lap_times', processed_folder_path, merge_condition, 'race_id')
+overwrite_partition(final_df, 'f1_processed', 'pit_stops', 'race_id')
 
 # COMMAND ----------
 
 # MAGIC %sql
-# MAGIC SELECT * FROM f1_processed.lap_times;
+# MAGIC SELECT * FROM f1_processed.pit_stops;
 
 # COMMAND ----------
 

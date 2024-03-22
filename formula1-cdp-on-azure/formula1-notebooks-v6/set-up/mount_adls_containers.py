@@ -43,8 +43,4 @@ mount_adls('formula1dl2024a', 'presentation')
 
 # COMMAND ----------
 
-mount_adls('formula1dl2024a', 'demo')
-
-# COMMAND ----------
-
 
